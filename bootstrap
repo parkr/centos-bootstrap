@@ -8,3 +8,5 @@ yum -y install zlib zlib-devel sqlite-devel httpd mysql-server mysql-devel curl-
 
 bash bootstrap-rvm
 bash get-dev-gems.sh
+bash bootstrap-mysql
+
