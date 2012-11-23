@@ -1,0 +1,9 @@
+#! /bin/bash
+
+gem install passenger
+passenger-install-nginx-module --auto
+
+# accept HTTP/HTTPS connections
+iptables -I INPUT 1 -p tcp --dport 80 -j ACCEPT
+iptables -I INPUT 1 -p tcp --dport 443 -j ACCEPT
+/etc/init.d/iptables save
