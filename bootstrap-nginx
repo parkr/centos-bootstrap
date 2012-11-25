@@ -13,4 +13,5 @@ if [ ! -f "/etc/init.d/nginx" ]; then
     wget https://raw.github.com/parkr/centos-bootstrap/master/support/nginx-service-script.sh
     sudo mv nginx-service-script.sh /etc/init.d/nginx
     sudo chmod +x /etc/init.d/nginx
+    sudo /sbin/chkconfig nginx on
 fi
