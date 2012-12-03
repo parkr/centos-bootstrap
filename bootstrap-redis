@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Many thanks:
-# https://github.com/causes/redis-centos/blob/master/README.markdown
+# http://www.saltwebsites.com/2012/install-redis-245-service-centos-6
 
 echo "Before we continue, please open up another terminal so that you can make changes to the conf files as the install occurs."
 read -p "Ready to proceed? (y/n) " -e RESPONSE
