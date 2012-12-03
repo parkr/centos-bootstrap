@@ -29,11 +29,14 @@ git clone git://github.com/github/hubot.git && cd hubot
 npm install
 
 # use hubot init script
-cd /etc/init
-wget https://raw.github.com/parkr/centos-bootstrap/master/support/hubot.conf
-echo "Edit /etc/init/hubot.conf with your info before booting up hubot."
+if [ -s "/etc/init/hubot.conf" ]; then
+    cd /etc/init
+    wget https://raw.github.com/parkr/centos-bootstrap/master/support/hubot.conf
+    echo "Edit /etc/init/hubot.conf with your info before booting up hubot."
+fi
+
 echo "! EXTREMELY IMPORTANT"
-echo "! Be sure to add the user specified by HUBOT_USER. In this example, we would run useradd -s /bin/false fillmein."
+echo "! Be sure to add the user specified by HUBOT_USER in /etc/init/hubot.conf. In this example, we would run useradd -s /bin/false fillmein."
 echo "! From there, you can start Hubot by running start hubot from the command-line."
 
 echo "Hubot successfully installed!"
