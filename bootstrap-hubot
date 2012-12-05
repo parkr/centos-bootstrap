@@ -36,7 +36,7 @@ if [ -s "/etc/init/hubot.conf" ]; then
 fi
 
 echo "! EXTREMELY IMPORTANT"
-echo "! Be sure to add the user specified by HUBOT_USER in /etc/init/hubot.conf. In this example, we would run useradd -s /bin/false fillmein."
+echo "! Be sure to add the user specified by HUBOT_USER in /etc/init/hubot.conf. In this example, we would run useradd -s /bin/false hubot."
 echo "! From there, you can start Hubot by running start hubot from the command-line."
 
 echo "Hubot successfully installed!"
