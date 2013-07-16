@@ -16,6 +16,7 @@ $ bash bootstrap-<module>
 * mysql
 * nginx (with passenger)
 * node (v0.10.4)
+* ocaml
 * postgres
 * redis (v2.6.7)
 * RVM
