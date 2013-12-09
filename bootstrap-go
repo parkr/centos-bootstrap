@@ -19,5 +19,8 @@ sudo ./make.bash
 export PATH="$GO_DIR/bin:$PATH"
 go version
 
+echo "Running basic test..."
+[[ $(go run support/run.go) -eq "hello, world" ]] || echo "... failed."
+
 echo
 echo "Now add $GO_DIR/bin to your PATH variable and you're good to go."
