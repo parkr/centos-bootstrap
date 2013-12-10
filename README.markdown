@@ -2,21 +2,39 @@
 
 Bootstrap your CentOS 6.3 machine with some commonly-desired awesomeness.
 
+## Installation
+
+```bash
+git clone git://github.com/parkr/centos-bootstrap.git
+cd centos-bootstrap
+./bootstrap basic
+```
+
 ## Usage
 
 If you want to install just one module, run:
 
 ```bash
-$ bash bootstrap-<module>
+$ ./bootstrap <module>
 ```
 
 ### Supported Modules
 
+* basic
+* ghi
+* git
+* go (v1.2)
 * hubot
 * mysql
 * nginx (with passenger)
 * node (v0.10.4)
 * ocaml
-* postgres
+* php-mcrypt
+* postgresql
+* pypy
+* python3
+* rails
+* rbenv (v0.4.0)
 * redis (v2.6.7)
-* RVM
+* ruby-install
+* rvm
