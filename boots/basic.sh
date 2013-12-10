@@ -1,10 +1,12 @@
 #! /bin/bash
 
-yum update
-yum -y groupinstall "Development Tools"
-yum -y install ntp
-ntpdate pool.ntp.org
-yum -y install \
+sudo yum update
+sudo yum groupinstall "Development Tools"
+
+sudo yum install ntp
+sudo ntpdate pool.ntp.org
+
+sudo yum install \
   zlib \
   zlib-devel \
   httpd \
