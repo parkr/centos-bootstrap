@@ -1,6 +1,8 @@
 #! /bin/bash
 
-curl -s https://raw.github.com/stephencelis/ghi/master/ghi > ghi
+set -e
+
+curl -s "https://raw.github.com/stephencelis/ghi/0.9.0.201304025/ghi" -o ghi
 chmod 755 ghi
 sudo mv ghi /usr/local/bin
 
