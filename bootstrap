@@ -1,12 +1,7 @@
 #! /bin/bash
 
-yum update
-yum -y groupinstall "Development Tools"
-yum -y install ntp
-ntpdate pool.ntp.org
-yum -y install zlib zlib-devel sqlite-devel httpd mysql-server mysql-devel curl-devel httpd-devel apr-devel apr-util-devel mlocate manlibxml2-devel libxslt-devel libffi-devel readline-devel
+if [ -z "$1" ]; then
+  echo "Please specify a module to install."
+fi
 
-bash bootstrap-rvm
-bash get-dev-gems.sh
-bash bootstrap-mysql
-
+bash boots/${1}.sh
