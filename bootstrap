@@ -1,7 +1,15 @@
-#! /bin/bash
+#! /usr/bin/env bash
+
+set -ex
+
+if [ -L $0 ]; then
+  root=$(cd "$(dirname "$(readlink "$0")")" && pwd)
+else
+  root=$(cd "$(dirname "$0")" && pwd)
+fi
 
 if [ -z "$1" ]; then
   echo "Please specify a module to install."
 fi
 
-bash boots/${1}.sh
+bash ${root}/boots/${1}.sh
