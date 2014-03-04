@@ -20,7 +20,8 @@ $ ./bootstrap <module>
 
 ### Supported Modules
 
-* basic
+* autoconf (v2.69)
+* basic (a bundle)
 * ghi
 * git
 * go (v1.2)
@@ -36,5 +37,7 @@ $ ./bootstrap <module>
 * rails
 * rbenv (v0.4.0)
 * redis (v2.6.7)
+* ruby (v2.1.1)
+* rubygems (v2.2.2)
 * ruby-install
 * rvm
