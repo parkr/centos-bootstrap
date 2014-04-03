@@ -37,6 +37,7 @@ $ ./bootstrap <module>
 * rails
 * rbenv (v0.4.0)
 * redis (v2.6.7)
+* reptyr (0.5)
 * ruby (v2.1.1)
 * rubygems (v2.2.2)
 * ruby-install
