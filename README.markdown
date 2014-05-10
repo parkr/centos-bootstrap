@@ -22,6 +22,7 @@ $ ./bootstrap <module>
 
 * autoconf (v2.69)
 * basic (a bundle)
+* camlistore (v0.7)
 * ghi
 * git
 * go (v1.2)
