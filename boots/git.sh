@@ -2,9 +2,9 @@
 
 set -e
 
-sudo yum remove git
+sudo yum remove git -y
 
-VERSION="1.8.5.1"
+VERSION="2.1.0"
 
 wget https://github.com/git/git/archive/v${VERSION}.zip
 unzip v${VERSION}
