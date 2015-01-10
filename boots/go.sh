@@ -1,6 +1,8 @@
 #! /bin/bash
 
-GO_VERSION="1.2"
+set -ex
+
+GO_VERSION="1.4"
 INSTALL_DIR="/usr/local"
 GO_DIR="$INSTALL_DIR/go"
 
@@ -8,7 +10,7 @@ if [ -d "$GO_DIR" ]; then
   sudo rm -rf $GO_DIR
 fi
 
-wget https://go.googlecode.com/files/go${GO_VERSION}.src.tar.gz
+wget https://storage.googleapis.com/golang/go${GO_VERSION}.src.tar.gz
 
 sudo tar -C $INSTALL_DIR -xzf go${GO_VERSION}.src.tar.gz
 
