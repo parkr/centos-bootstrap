@@ -2,9 +2,7 @@
 
 set -e
 
-sudo yum remove git -y
-
-VERSION="2.1.0"
+VERSION="2.1.4"
 
 wget https://github.com/git/git/archive/v${VERSION}.zip
 unzip v${VERSION}
