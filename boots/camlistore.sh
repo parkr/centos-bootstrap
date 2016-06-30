@@ -2,7 +2,7 @@
 
 set -e
 
-VERSION="0.7"
+VERSION="0.9"
 FILENAME="camlistore-${VERSION}"
 GZ_FILENAME="${FILENAME}.tar.gz"
 
